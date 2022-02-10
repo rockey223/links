@@ -1,16 +1,15 @@
 body{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
     width: 100%;
     background-color: rgb(153, 153, 150);
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 }
 
 .container{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,9 +20,8 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-    list-style: none;
-    margin: 30px;
-    flex-wrap: wrap;
+   list-style: none; 
+   flex-wrap: wrap;
 }
 
 .container .link-container .link-items{
@@ -51,4 +49,29 @@ body{
     background-color: #dfdfdf;
     box-shadow:  10px 10px 15px #000000;
     font-size: 18px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;  
+    width: 100%;
+    text-align: center; 
+}
+
+a{
+    text-decoration: none;
+}
+
+@media  screen and  (max-width:768px){
+    h1{
+        font-size: 30px ;
+    }
+    .footer{
+        position: relative;
+        font-size: 20px;  
+        width: 100%;
+        text-align: center; 
+    }
+    
 }
